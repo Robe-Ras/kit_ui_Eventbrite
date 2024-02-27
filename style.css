@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;600;800&display=swap");
+
+
+
+
+/* Mes couleurs UI */ 
+:root {
+  --green: #00ff9f;
+  --yellow: #fff266;
+  --purple: #9c7bff;
+  --blue: #4b69fe;
+  --light-purple: #f8e0fa;
+  --light-green: #b2e2bb;
+  --light-yellow: #fbf4a0;
+  --font: "Work Sans", sans-serif;
+  --shadow-1: 9px 9px #000;
+  --border: solid 9px #000;
+  --border-small: solid 0.65vmin #000;
+}
+
+/* ########## body ##########*/
+
+/* Couleur du background de la page */
+body {
+  --bg-color: var(--purple);
+  font-family: var(--font);
+
+  /*Background image from Hero Patterns*/
+  background-color: var(--bg-color);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  animation: bg-move 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+
+/* Activation du live wallpaper */
+@keyframes bg-move {
+	0% {
+		background-position: 0 0;
+	}
+
+	100% {
+		background-position: 20px 20px;
+	}
+}
+
+/* ############################### */
+
+
+
+/* ########## Navbar ########## */
+
+.logo {
+  /* ajustement logo */
+  transform: translateY(-10px)
+}
+
+.dropdown-menu {
+  --bs-dropdown-border-color: var(--purple);
+  --bs-dropdown-divider-bg: var(--purple);
+  --bs-dropdown-link-color: var(--purple);
+  --bs-dropdown-link-hover-bg: var(--light-yellow);
+  --bs-dropdown-link-hover-color: #7300ff;
+}
+
+.navbar {
+  --bs-navbar-color: var(--purple);
+  --bs-navbar-hover-color: var(--yellow);
+  --bs-navbar-active-color: var(--light-yellow);
+}
+
+
+/* ###################### */
+
+
+/* ########## Login ############ */
+
+/* Styles pour le formulaire de login */
+.form_area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--green);
+  border: 3px solid;
+  border-radius: 30px;
+  box-shadow: var(--shadow-1);
+  padding: 40px;
+  margin: 15vh auto;
+  width: 400px;
+  height: 500px;
+}
+
+.logo_login {
+  margin-top: 15px;
+}
+
+.title {
+  color: black;
+  font-weight: 900;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.sub_title {
+  font-weight: 600;
+  margin: 10px 10px;
+}
+
+.form_group {
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.form_style {
+  outline: none;
+  border: 2px solid;
+  box-shadow: var(--shadow-1);
+  width: 91%;
+  padding: 15px 10px;
+  border-radius: 30px;
+  font-size: 15px;
+  margin: 0 auto;
+}
+
+.btn {
+  width: 100%;
+  padding: 15px;
+  margin-top: 35px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  background: var(--yellow);
+  border-radius: 30px;
+  font-weight: 800;
+  box-shadow: var(--shadow-1);
+  cursor: pointer;
+  border: 2px solid;
+  
+}
+
+.link {
+  color: #7300ff;
+}
+
+
+
+/* ############################# */
+
+
+
+
+
+
+
+
+/* ######### Mes 5 Blocs de couleurs ######### */
+#modal {
+  height: 11em; 
+  aspect-ratio: 3/3;
+  background: var(--green);
+  border-radius: 2em; 
+  box-shadow: var(--shadow-1);
+  border: var(--border);
+  position: relative;
+  overflow: visible;
+  padding-block: 2em; 
+  margin: auto;
+}
+
+
+#name {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.3em; 
+  line-height: 0.5em;
+}
+
+#title {
+  margin: auto;
+  text-align: center;
+  line-height: 0em;
+  font-size: 0.8em; 
+}
+
+
+/* Couleur primaire */
+#color {
+  box-shadow: 0.3em 0.3em #000; 
+  background: var(--green);
+  width: 7.5em; 
+  aspect-ratio: 3/3;
+  border: var(--border-small);
+  border-radius: 2em; 
+  margin: auto;
+}
+
+/* Couleur secondaire */
+#color2 {
+  box-shadow: 0.3em 0.3em #000; 
+  background: var(--light-green);
+  width: 7.5em; 
+  aspect-ratio: 3/3;
+  border: var(--border-small);
+  border-radius: 2em; 
+  margin: auto;
+}
+
+/* Nuance 1 */
+#n1 {
+  box-shadow: 0.3em 0.3em #000; 
+  background: var(--light-purple);
+  width: 7.5em; 
+  aspect-ratio: 3/3;
+  border: var(--border-small);
+  border-radius: 2em; 
+  margin: auto;
+}
+
+/* Nuance 2 */
+#n2 {
+  box-shadow: 0.3em 0.3em #000; 
+  background: var(--light-yellow);
+  width: 7.5em; 
+  aspect-ratio: 3/3;
+  border: var(--border-small);
+  border-radius: 2em; 
+  margin: auto;
+}
+
+/* Nuance 3 */
+#n3 {
+  box-shadow: 0.3em 0.3em #000; 
+  background: var(--yellow);
+  width: 7.5em; 
+  aspect-ratio: 3/3;
+  border: var(--border-small);
+  border-radius: 2em; 
+  margin: auto;
+}
+
+/* alignement des modals horizontalement */
+.modals-container {
+  display: flex;
+}
+
+.modal {
+  flex: 1;
+  margin: 10 10px;
+}
+
+
+
+
+
+
+
