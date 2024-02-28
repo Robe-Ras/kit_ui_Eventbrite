@@ -3,7 +3,7 @@
 
 
 
-/* Mes couleurs UI */ 
+/* Mon petit root */ 
 :root {
   --green: #00ff9f;
   --yellow: #fff266;
@@ -76,7 +76,6 @@ body {
 
 /* ########## Login ############ */
 
-/* Styles pour le formulaire de login */
 .form_area {
   display: flex;
   flex-direction: column;
@@ -94,6 +93,8 @@ body {
 
 .logo_login {
   margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .title {
@@ -144,115 +145,511 @@ body {
   color: #7300ff;
 }
 
-
-
 /* ############################# */
 
 
+/* ########## SIGN UP ############ */
 
-
-
-
-
-
-/* ######### Mes 5 Blocs de couleurs ######### */
-#modal {
-  height: 11em; 
-  aspect-ratio: 3/3;
-  background: var(--green);
-  border-radius: 2em; 
-  box-shadow: var(--shadow-1);
-  border: var(--border);
-  position: relative;
-  overflow: visible;
-  padding-block: 2em; 
-  margin: auto;
-}
-
-
-#name {
-  text-align: center;
-  font-weight: 600;
-  font-size: 1.3em; 
-  line-height: 0.5em;
-}
-
-#title {
-  margin: auto;
-  text-align: center;
-  line-height: 0em;
-  font-size: 0.8em; 
-}
-
-
-/* Couleur primaire */
-#color {
-  box-shadow: 0.3em 0.3em #000; 
-  background: var(--green);
-  width: 7.5em; 
-  aspect-ratio: 3/3;
-  border: var(--border-small);
-  border-radius: 2em; 
-  margin: auto;
-}
-
-/* Couleur secondaire */
-#color2 {
-  box-shadow: 0.3em 0.3em #000; 
-  background: var(--light-green);
-  width: 7.5em; 
-  aspect-ratio: 3/3;
-  border: var(--border-small);
-  border-radius: 2em; 
-  margin: auto;
-}
-
-/* Nuance 1 */
-#n1 {
-  box-shadow: 0.3em 0.3em #000; 
-  background: var(--light-purple);
-  width: 7.5em; 
-  aspect-ratio: 3/3;
-  border: var(--border-small);
-  border-radius: 2em; 
-  margin: auto;
-}
-
-/* Nuance 2 */
-#n2 {
-  box-shadow: 0.3em 0.3em #000; 
-  background: var(--light-yellow);
-  width: 7.5em; 
-  aspect-ratio: 3/3;
-  border: var(--border-small);
-  border-radius: 2em; 
-  margin: auto;
-}
-
-/* Nuance 3 */
-#n3 {
-  box-shadow: 0.3em 0.3em #000; 
-  background: var(--yellow);
-  width: 7.5em; 
-  aspect-ratio: 3/3;
-  border: var(--border-small);
-  border-radius: 2em; 
-  margin: auto;
-}
-
-/* alignement des modals horizontalement */
-.modals-container {
+.form_area_signup {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--green);
+  border: 3px solid;
+  border-radius: 30px;
+  box-shadow: var(--shadow-1);
+  padding: 40px;
+  margin: 15vh auto;
+  width: 400px;
+  height: 800px;
 }
 
-.modal {
-  flex: 1;
-  margin: 10 10px;
+.logo_signup {
+  margin-top: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  color: black;
+  font-weight: 900;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.sub_title {
+  font-weight: 600;
+  margin: 10px 10px;
+}
+
+.form_group {
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.form_style {
+  outline: none;
+  border: 2px solid;
+  box-shadow: var(--shadow-1);
+  width: 93%;
+  padding: 15px 10px;
+  border-radius: 30px;
+  font-size: 15px;
+  margin: 0 auto;
+}
+
+.btn_signup {
+  width: 100%;
+  padding: 15px;
+  margin-top: 35px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  background: var(--yellow);
+  border-radius: 30px;
+  font-weight: 800;
+  box-shadow: var(--shadow-1);
+  cursor: pointer;
+  border: 2px solid;
+}
+
+.link_signup {
+  color: #7300ff;
+}
+
+/* ################################ */
+
+
+/* ######### Mot de passe oublié ######### */
+
+
+.logo_forgot_password {
+  margin-top: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  color: black;
+  font-weight: 900;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.sub_title {
+  font-weight: 600;
+  margin: 10px 10px;
+}
+
+.form_group {
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.form_style {
+  outline: none;
+  border: 2px solid;
+  box-shadow: var(--shadow-1);
+  width: 93%;
+  padding: 15px 10px;
+  border-radius: 30px;
+  font-size: 15px;
+  margin: 0 auto;
+}
+
+.btn_forgot_password {
+  width: 100%;
+  padding: 15px;
+  margin-top: 35px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  background: var(--yellow);
+  border-radius: 30px;
+  font-weight: 800;
+  box-shadow: var(--shadow-1);
+  cursor: pointer;
+  border: 2px solid;
+}
+
+.instructions {
+  text-align: justify;
 }
 
 
+/* ################################ */
+
+
+
+/* ######### Modification mot de passe ######### */
+
+.form_area_pc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--green);
+  border: 3px solid;
+  border-radius: 30px;
+  box-shadow: var(--shadow-1);
+  padding: 40px;
+  margin: 15vh auto;
+  width: 400px;
+  height: 650px;
+}
+
+.logo_pc {
+  margin-top: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  color: black;
+  font-weight: 900;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.sub_title {
+  font-weight: 600;
+  margin: 10px 10px;
+}
+
+.form_group {
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.form_style {
+  outline: none;
+  border: 2px solid;
+  box-shadow: var(--shadow-1);
+  width: 93%;
+  padding: 15px 10px;
+  border-radius: 30px;
+  font-size: 15px;
+  margin: 0 auto;
+}
+
+.btn_pc {
+  width: 100%;
+  padding: 15px;
+  margin-top: 35px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  background: var(--yellow);
+  border-radius: 30px;
+  font-weight: 800;
+  box-shadow: var(--shadow-1);
+  cursor: pointer;
+  border: 2px solid;
+}
+
+.btn_cancel_pc {
+  width: 100%;
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  background: var(--light-purple);
+  border-radius: 30px;
+  font-weight: 800;
+  box-shadow: var(--shadow-1);
+  cursor: pointer;
+  border: 2px solid;
+}
+
+/* ################################ */
+
+/* ########## Footer ########## */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* ################################ */
+
+
+
+
+/* ############ JUMBOTRON ########## */
+
+.static-slider7 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300;
+	background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  padding: 12% 0;
+}
+
+.static-slider7 h1.title {
+  font-size: 122px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 130px;
+}
+
+.static-slider7 h1.title {
+  text-shadow: 
+    1px 1px 0 #000,  
+    2px 2px 0 #000,
+    3px 3px 0 #000,
+    4px 4px 0 #000,
+    5px 5px 0 #000,
+    6px 6px 0 #000,
+    7px 7px 0 #000,
+    8px 8px 0 #000,
+    9px 9px 0 #000,
+    10px 10px 0 #000,
+    11px 11px 0 #000,
+    12px 12px 0 #000,
+    13px 13px 0 #000,
+    14px 14px 0 #000,
+    15px 15px 0 #000,
+    16px 16px 0 #000,
+    17px 17px 0 #000,
+    18px 18px 0 #000,
+    19px 19px 0 #000,
+    20px 20px 0 #000; /* Contour du texte pour h1 */ 
+}
+
+.static-slider7 h4 {
+  font-weight: 600;
+  text-shadow: -1px -1px 0 #000000,  
+                1px -1px 0 #000,
+               -1px  1px 0 #000,
+                1px  1px 0 #000; 
+}
+
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px; 
+}
+
+
+.btn_j {
+  display: inline-block; /* pour que le lien occupe l'espace de son contenu */
+  text-decoration: none; /* Supprime le soulignement par défaut */
+  color: var(--yellow);
+  background-color: var(--purple); 
+  padding: 15px 30px; 
+  border-radius: 30px; 
+  font-weight: 800; 
+  box-shadow: var(--shadow-1); 
+  cursor: pointer; 
+  border: 2px solid black
+}
+
+.btn_j:hover {
+  background-color: #ffeb3b; 
+  color: #6600ff;
+}
+
+
+/* ################################ */
+
+
+
+/* ############# BANNER 2 ################### */
+
+.banner {
+  background-color: #000;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.banner-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--light-purple);
+
+  
+}
+
+
+/* ################################ */
 
 
 
 
 
+
+/* ################################## CARDS ################################## */
+
+
+/* ########## Evenements ############ */
+.event_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Quatre colonnes de largeur égale */
+  gap: 20px; /* Espacement entre les cartes */
+}
+
+.event_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--green);
+  border: 3px solid;
+  border-radius: 30px;
+  box-shadow: var(--shadow-1);
+  padding: 40px;
+  width: 300px; /* Largeur de chaque carte */
+  height: 400px; /* Hauteur de chaque carte */
+}
+
+.event_image {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px; /* Ajustez la largeur selon vos besoins */
+  height: auto; /* Ajustez la hauteur de manière proportionnelle */
+  border-radius: 20px; /* Ajoute un border radius */
+}
+
+.event_title {
+  color: black;
+  font-weight: 900;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.event_subtitle {
+  font-weight: 600;
+  margin: 10px 10px;
+}
+
+.event_group {
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.event_input {
+  outline: none;
+  border: 2px solid;
+  box-shadow: var(--shadow-1);
+  width: 91%;
+  padding: 15px 10px;
+  border-radius: 30px;
+  font-size: 15px;
+  margin: 0 auto;
+}
+
+.event_button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  background: var(--yellow);
+  border-radius: 30px;
+  font-weight: 800;
+  box-shadow: var(--shadow-1);
+  cursor: pointer;
+  border: 2px solid;
+}
+
+.event_link {
+  color: #7300ff;
+}
+
+
+/* ################################ */
+
+
+/* ############# carte participants ################### */
+
+
+.participant_list {
+  background-color: var(--green);
+  border: 3px solid;
+  border-radius: 30px;
+  box-shadow: var(--shadow-1);
+  padding: 40px;
+  margin: 15vh auto;
+  width: 300px;
+}
+
+.title {
+  color: black;
+  font-weight: 900;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.participant_names {
+  margin-top: 10px;
+}
+
+.participant_name {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+/* ################################ */
+
+
+/* ############# carte evenements par ville ################### */
+
+.city_card {
+  background-color: var(--green);
+  border: 3px solid;
+  border-radius: 30px;
+  box-shadow: var(--shadow-1);
+  padding: 40px;
+  margin: 15vh auto;
+  width: 300px;
+}
+
+.event_title {
+  color: black;
+  font-weight: 900;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.event_subtitle {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.event_heading {
+  font-weight: 900;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.event_item {
+  margin-bottom: 20px;
+}
+
+/* ################################ */

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Inscription</title>
+</head>
+
+<body class="container">
+
+  <div id="signup" class="form_area_signup">
+      <div class="form-box-login">
+        <a class="brand" href="#">
+          <img class="logo_signup"src="event1.png">
+        </a>
+          <h4 class="title">INSCRIPTION</h4>
+          <form action="#" id="signupForm">
+              <div class="form_group">
+                  <label for="firstname" class="sub_title">Prénom</label>
+                  <input type="text" class="form_style" id="firstname" placeholder="Your first name">
+              </div>
+              <div class="form_group">
+                  <label for="lastname" class="sub_title">Nom</label>
+                  <input type="text" class="form_style" id="lastname" placeholder="Your last name">
+              </div>
+              <div class="form_group">
+                  <label for="email" class="sub_title">Email</label>
+                  <input type="email" class="form_style" id="email" placeholder="Your email address">
+              </div>
+              <div class="form_group">
+                  <label for="password" class="sub_title">Password</label>
+                  <input type="password" class="form_style" id="password" placeholder="Your password">
+              </div>
+              <div class="form_group">
+                  <label for="confirmPassword" class="sub_title">Password Confirmation </label>
+                  <input type="password" class="form_style" id="confirmPassword" placeholder="Confirm your password">
+              </div>
+              <div>
+                  <button class="btn_signup" onclick="submitSignupForm()">VALIDER</button>
+                  <p>Tu as déjà un compte ? <a href="#" class="link_signup">Login !</a></p>
+              </div>
+          </form>
+      </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
